@@ -38,6 +38,10 @@ export default {
 .custom-button:active{
   scale: 90%;
 }
+.custom-button:hover{
+  cursor: pointer;
+  
+}
 .selected{
   border: 1px solid #2d264b;
   background: #E3CD00;

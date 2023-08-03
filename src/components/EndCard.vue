@@ -364,6 +364,7 @@ export default {
   height: fit-content;
   padding: 40px 20px;
   color: #d7d7d7;
+  display: flex;
   font-size: 14px;
   font-weight: 400;
 }
@@ -404,6 +405,8 @@ export default {
 }
 
 .company-desc {
+  display: flex;
+  flex-direction: column;
   font-family: "Open Sans";
   font-size: 12px;
   font-weight: 400;

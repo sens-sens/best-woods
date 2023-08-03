@@ -67,6 +67,13 @@ export default {
 .text-short{
   display: none;
 }
+.btn:hover{
+ cursor: pointer;
+}
+.edit-icon{
+ cursor: pointer;
+}
+
 
 .address-options{
   display: grid;

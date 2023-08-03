@@ -36,5 +36,10 @@ export default {
   color: #2d264b;
   padding: 5px 15px;
 }
+
+.button:hover{
+ cursor: pointer;
+
+}
 </style>
   

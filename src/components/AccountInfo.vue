@@ -216,6 +216,7 @@ margin: 0px 10px;
 .logout-btn:hover {
   fill: white;
   color: white;
+  cursor: pointer;
   background: #2D264B;
 }
 .logout-btn:hover *{
