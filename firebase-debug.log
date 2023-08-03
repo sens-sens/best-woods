@@ -1,0 +1,100 @@
+[debug] [2023-08-03T09:46:48.390Z] ----------------------------------------------------------------------
+[debug] [2023-08-03T09:46:48.391Z] Command:       /usr/bin/node /usr/bin/firebase deploy
+[debug] [2023-08-03T09:46:48.392Z] CLI Version:   12.4.6
+[debug] [2023-08-03T09:46:48.392Z] Platform:      linux
+[debug] [2023-08-03T09:46:48.392Z] Node Version:  v18.17.0
+[debug] [2023-08-03T09:46:48.394Z] Time:          Thu Aug 03 2023 15:16:48 GMT+0530 (India Standard Time)
+[debug] [2023-08-03T09:46:48.394Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-08-03T09:46:48.455Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-08-03T09:46:48.455Z] > authorizing via signed-in user (senthilraja1919@gmail.com)
+[debug] [2023-08-03T09:46:48.455Z] [iam] checking project best-woods-c37fd for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-08-03T09:46:48.456Z] > refreshing access token with scopes: []
+[debug] [2023-08-03T09:46:48.458Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-08-03T09:46:48.458Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-08-03T09:46:48.690Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-08-03T09:46:48.691Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-08-03T09:46:48.694Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/best-woods-c37fd:testIamPermissions [none]
+[debug] [2023-08-03T09:46:48.695Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/best-woods-c37fd:testIamPermissions x-goog-quota-user=projects/best-woods-c37fd
+[debug] [2023-08-03T09:46:48.695Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/best-woods-c37fd:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-08-03T09:46:50.437Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/best-woods-c37fd:testIamPermissions 200
+[debug] [2023-08-03T09:46:50.437Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/best-woods-c37fd:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-08-03T09:46:50.438Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/best-woods-c37fd [none]
+[debug] [2023-08-03T09:46:51.258Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/best-woods-c37fd 200
+[debug] [2023-08-03T09:46:51.258Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/best-woods-c37fd {"projectId":"best-woods-c37fd","projectNumber":"315345523079","displayName":"best-woods","name":"projects/best-woods-c37fd","resources":{"hostingSite":"best-woods-c37fd"},"state":"ACTIVE","etag":"1_ea93c8f1-3317-4d9e-bb1d-390aef5ab422"}
+[info] 
+[info] === Deploying to 'best-woods-c37fd'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2023-08-03T09:46:51.264Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/best-woods-c37fd/versions [none]
+[debug] [2023-08-03T09:46:51.265Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/best-woods-c37fd/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2023-08-03T09:46:53.099Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/best-woods-c37fd/versions 200
+[debug] [2023-08-03T09:46:53.100Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/best-woods-c37fd/versions {"name":"projects/315345523079/sites/best-woods-c37fd/versions/9f38b3427597229b","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[best-woods-c37fd]: beginning deploy... 
+[info] i  hosting[best-woods-c37fd]: found 9 files in dist 
+[debug] [2023-08-03T09:46:53.112Z] [hosting] uploading with 200 concurrency
+[debug] [2023-08-03T09:46:53.221Z] [hosting] hash cache [ZGlzdA] stored for 9 files
+[debug] [2023-08-03T09:46:53.221Z] [hosting][hash queue][FINAL] {"max":96,"min":6,"avg":17.77777777777778,"active":0,"complete":9,"success":9,"errored":0,"retried":0,"total":9,"elapsed":100}
+[debug] [2023-08-03T09:46:53.222Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/315345523079/sites/best-woods-c37fd/versions/9f38b3427597229b:populateFiles [none]
+[debug] [2023-08-03T09:46:53.222Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/315345523079/sites/best-woods-c37fd/versions/9f38b3427597229b:populateFiles {"files":{"/index.html":"457bc58786234045ba503a74d9d045ee8e342ddde06529605218f1f1d8dfe01e","/favicon.ico":"e0535b2041a7a1721cdec785c903980d41fdf0d810a4ea9726b6ffd1371bbc28","/img/whatsapp.9d8213b5.png":"fa55e2d030b40f2e2c97fea916fd1026aa10551b6655019cbfef3305a55f816a","/css/app.feefcace.css":"d9838135e9d3dc7afddec0e889c49392daec09b8b2a899812899b7c367b92c1f","/js/app.9f608949.js":"9f58537f2e5c46976f4c470df7fd423113de58120a14ae5967b877c57b38633e","/img/photo.e574c4df.jpg":"d8bc3eb8372cd5c2c2af8e2d977a9c0aafbd1dbf3067a2a7dcb12253a8cbb3bf","/js/app.9f608949.js.map":"b2bc43e67cedd610725335a1a3e6e96fd906dbd5cba6473618936226a31a50d0","/js/chunk-vendors.54e3371f.js":"1848b645e1214fe63cd702265238e4aec02084064329d7f7e85b9487dc11b825","/js/chunk-vendors.54e3371f.js.map":"ce4e2ec80de619cb4f18d15b8c175d90922e1497dfbb0e6f3b63b5bd0124378c"}}
+[debug] [2023-08-03T09:46:54.533Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/315345523079/sites/best-woods-c37fd/versions/9f38b3427597229b:populateFiles 200
+[debug] [2023-08-03T09:46:54.533Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/315345523079/sites/best-woods-c37fd/versions/9f38b3427597229b:populateFiles {"uploadRequiredHashes":["1848b645e1214fe63cd702265238e4aec02084064329d7f7e85b9487dc11b825","ce4e2ec80de619cb4f18d15b8c175d90922e1497dfbb0e6f3b63b5bd0124378c","457bc58786234045ba503a74d9d045ee8e342ddde06529605218f1f1d8dfe01e","d9838135e9d3dc7afddec0e889c49392daec09b8b2a899812899b7c367b92c1f","9f58537f2e5c46976f4c470df7fd423113de58120a14ae5967b877c57b38633e","b2bc43e67cedd610725335a1a3e6e96fd906dbd5cba6473618936226a31a50d0"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/best-woods-c37fd/versions/9f38b3427597229b/files"}
+[debug] [2023-08-03T09:46:54.534Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/best-woods-c37fd/versions/9f38b3427597229b/files/1848b645e1214fe63cd702265238e4aec02084064329d7f7e85b9487dc11b825 [none]
+[debug] [2023-08-03T09:46:54.534Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/best-woods-c37fd/versions/9f38b3427597229b/files/1848b645e1214fe63cd702265238e4aec02084064329d7f7e85b9487dc11b825 [stream]
+[debug] [2023-08-03T09:46:54.535Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/best-woods-c37fd/versions/9f38b3427597229b/files/ce4e2ec80de619cb4f18d15b8c175d90922e1497dfbb0e6f3b63b5bd0124378c [none]
+[debug] [2023-08-03T09:46:54.535Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/best-woods-c37fd/versions/9f38b3427597229b/files/ce4e2ec80de619cb4f18d15b8c175d90922e1497dfbb0e6f3b63b5bd0124378c [stream]
+[debug] [2023-08-03T09:46:54.536Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/best-woods-c37fd/versions/9f38b3427597229b/files/457bc58786234045ba503a74d9d045ee8e342ddde06529605218f1f1d8dfe01e [none]
+[debug] [2023-08-03T09:46:54.536Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/best-woods-c37fd/versions/9f38b3427597229b/files/457bc58786234045ba503a74d9d045ee8e342ddde06529605218f1f1d8dfe01e [stream]
+[debug] [2023-08-03T09:46:54.538Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/best-woods-c37fd/versions/9f38b3427597229b/files/d9838135e9d3dc7afddec0e889c49392daec09b8b2a899812899b7c367b92c1f [none]
+[debug] [2023-08-03T09:46:54.538Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/best-woods-c37fd/versions/9f38b3427597229b/files/d9838135e9d3dc7afddec0e889c49392daec09b8b2a899812899b7c367b92c1f [stream]
+[debug] [2023-08-03T09:46:54.539Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/best-woods-c37fd/versions/9f38b3427597229b/files/9f58537f2e5c46976f4c470df7fd423113de58120a14ae5967b877c57b38633e [none]
+[debug] [2023-08-03T09:46:54.539Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/best-woods-c37fd/versions/9f38b3427597229b/files/9f58537f2e5c46976f4c470df7fd423113de58120a14ae5967b877c57b38633e [stream]
+[debug] [2023-08-03T09:46:54.540Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/best-woods-c37fd/versions/9f38b3427597229b/files/b2bc43e67cedd610725335a1a3e6e96fd906dbd5cba6473618936226a31a50d0 [none]
+[debug] [2023-08-03T09:46:54.540Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/best-woods-c37fd/versions/9f38b3427597229b/files/b2bc43e67cedd610725335a1a3e6e96fd906dbd5cba6473618936226a31a50d0 [stream]
+[debug] [2023-08-03T09:46:54.542Z] [hosting][populate queue][FINAL] {"max":1314,"min":1314,"avg":1314,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1322}
+[debug] [2023-08-03T09:46:54.542Z] [hosting] uploads queued: 6
+[debug] [2023-08-03T09:46:56.274Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/best-woods-c37fd/versions/9f38b3427597229b/files/457bc58786234045ba503a74d9d045ee8e342ddde06529605218f1f1d8dfe01e 200
+[debug] [2023-08-03T09:46:56.275Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/best-woods-c37fd/versions/9f38b3427597229b/files/457bc58786234045ba503a74d9d045ee8e342ddde06529605218f1f1d8dfe01e [stream]
+[debug] [2023-08-03T09:46:56.276Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/best-woods-c37fd/versions/9f38b3427597229b/files/d9838135e9d3dc7afddec0e889c49392daec09b8b2a899812899b7c367b92c1f 200
+[debug] [2023-08-03T09:46:56.276Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/best-woods-c37fd/versions/9f38b3427597229b/files/d9838135e9d3dc7afddec0e889c49392daec09b8b2a899812899b7c367b92c1f [stream]
+[debug] [2023-08-03T09:46:56.276Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/best-woods-c37fd/versions/9f38b3427597229b/files/1848b645e1214fe63cd702265238e4aec02084064329d7f7e85b9487dc11b825 200
+[debug] [2023-08-03T09:46:56.277Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/best-woods-c37fd/versions/9f38b3427597229b/files/1848b645e1214fe63cd702265238e4aec02084064329d7f7e85b9487dc11b825 [stream]
+[debug] [2023-08-03T09:46:56.277Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/best-woods-c37fd/versions/9f38b3427597229b/files/b2bc43e67cedd610725335a1a3e6e96fd906dbd5cba6473618936226a31a50d0 200
+[debug] [2023-08-03T09:46:56.277Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/best-woods-c37fd/versions/9f38b3427597229b/files/b2bc43e67cedd610725335a1a3e6e96fd906dbd5cba6473618936226a31a50d0 [stream]
+[debug] [2023-08-03T09:46:56.278Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/best-woods-c37fd/versions/9f38b3427597229b/files/ce4e2ec80de619cb4f18d15b8c175d90922e1497dfbb0e6f3b63b5bd0124378c 200
+[debug] [2023-08-03T09:46:56.278Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/best-woods-c37fd/versions/9f38b3427597229b/files/ce4e2ec80de619cb4f18d15b8c175d90922e1497dfbb0e6f3b63b5bd0124378c [stream]
+[debug] [2023-08-03T09:46:56.912Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/best-woods-c37fd/versions/9f38b3427597229b/files/9f58537f2e5c46976f4c470df7fd423113de58120a14ae5967b877c57b38633e 200
+[debug] [2023-08-03T09:46:56.912Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/best-woods-c37fd/versions/9f38b3427597229b/files/9f58537f2e5c46976f4c470df7fd423113de58120a14ae5967b877c57b38633e [stream]
+[debug] [2023-08-03T09:46:56.912Z] [hosting][upload queue][FINAL] {"max":2378,"min":1741,"avg":1848.6666666666667,"active":0,"complete":6,"success":6,"errored":0,"retried":0,"total":6,"elapsed":2379}
+[info] ✔  hosting[best-woods-c37fd]: file upload complete 
+[debug] [2023-08-03T09:46:56.913Z] [hosting] deploy completed after 3811ms
+[debug] [2023-08-03T09:46:56.913Z] [
+  {
+    "config": {
+      "public": "dist",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "best-woods-c37fd"
+    },
+    "version": "projects/315345523079/sites/best-woods-c37fd/versions/9f38b3427597229b"
+  }
+]
+[info] i  hosting[best-woods-c37fd]: finalizing version... 
+[debug] [2023-08-03T09:46:56.915Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/best-woods-c37fd/versions/9f38b3427597229b updateMask=status%2Cconfig
+[debug] [2023-08-03T09:46:56.915Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/best-woods-c37fd/versions/9f38b3427597229b {"status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]}}
+[debug] [2023-08-03T09:46:57.920Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/best-woods-c37fd/versions/9f38b3427597229b 200
+[debug] [2023-08-03T09:46:57.920Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/best-woods-c37fd/versions/9f38b3427597229b {"name":"projects/315345523079/sites/best-woods-c37fd/versions/9f38b3427597229b","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2023-08-03T09:46:52.193142Z","createUser":{"email":"senthilraja1919@gmail.com"},"finalizeTime":"2023-08-03T09:46:57.649500Z","finalizeUser":{"email":"senthilraja1919@gmail.com"}}
+[debug] [2023-08-03T09:46:57.920Z] [hosting] finalized version for best-woods-c37fd:[object Object]
+[info] ✔  hosting[best-woods-c37fd]: version finalized 
+[info] i  hosting[best-woods-c37fd]: releasing new version... 
+[debug] [2023-08-03T09:46:57.921Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/best-woods-c37fd/channels/live/releases versionName=projects%2F315345523079%2Fsites%2Fbest-woods-c37fd%2Fversions%2F9f38b3427597229b
+[debug] [2023-08-03T09:46:57.921Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/best-woods-c37fd/channels/live/releases {}

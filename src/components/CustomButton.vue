@@ -34,6 +34,10 @@ export default {
   width: auto;
   height: fit-content;
 }
+
+.custom-button:active{
+  scale: 90%;
+}
 .selected{
   border: 1px solid #2d264b;
   background: #E3CD00;

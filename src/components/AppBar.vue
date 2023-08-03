@@ -1,6 +1,7 @@
 <template>
   <div id="app-bar">
     <svg
+    class="drawer"
       width="24"
       height="24"
       viewBox="0 0 24 24"
@@ -17,7 +18,7 @@
       />
     </svg>
 
-    <p>Best Woods</p>
+    <p class="title">Best Woods</p>
     <div class="toolbar">
       <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M11.4467 6.40277C11.9921 6.31637 12.3643 5.80413 12.2779 5.25865C12.1915 4.71316 11.6793 4.34099 11.1338 4.42739C7.85328 4.94697 5.28043 7.51983 4.76085 10.8003C4.67445 11.3458 5.04662 11.8581 5.5921 11.9445C6.13759 12.0309 6.64983 11.6587 6.73622 11.1132C7.12026 8.68848 9.02194 6.78681 11.4467 6.40277Z" fill="#2D264B"/>
@@ -52,6 +53,7 @@ export default {
 <style scoped>
 
 
+
 #app-bar {
   padding:15px 10px;
   align-items: center;
@@ -66,10 +68,17 @@ export default {
 }
 
 .toolbar svg{
+  flex:1;
   height: 24px;
   width: 24px;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.toolbar svg:hover{
+  scale: 120%;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 @media only screen and (max-width: 390px) {

@@ -100,7 +100,6 @@
 <img class="whatsapp" :src="whatsapp">
   </div>
 <div class="end-card">
-  <EndCard></EndCard>
 </div>
 </template>
   
@@ -141,7 +140,7 @@ export default {
       this.currentSelection=this.selections[index]
     }
   },
-  components: { CustomButton , AddressSection, UploadsSection,FavoritesSection,PersonalInfoSection, },
+  components: { CustomButton , AddressSection, UploadsSection,FavoritesSection,PersonalInfoSection },
 };
 </script>
   
@@ -217,15 +216,29 @@ margin: 0px 10px;
 .logout-btn:hover {
   fill: white;
   color: white;
-  background: #6f698b;
+  background: #2D264B;
+}
+.logout-btn:hover *{
+ fill:white;
+  color: white;
+ 
+}
+.logout-btn:active{
+  scale: 90%;
+}
+
+.logout-btn *{
+  transition-duration: 0.5s;
 }
 .logout-btn {
+  transition-duration: 0.5s;
   padding-top: 10px;
   padding-bottom: 10px;
   font-weight: 400;
   padding-left: 10px;
 }
 .logout-btn svg {
+  
   padding-left: 10px;
   padding-right: 10px;
 }
