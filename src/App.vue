@@ -20,12 +20,13 @@ export default {
 
 
 
-<style>
+<style >
 @import url("https://fonts.googleapis.com/css?family=Unbounded");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 
 * {
   padding: 0;
   margin: 0;
+  font-family: "Unbounded";
 }
 </style>

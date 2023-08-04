@@ -398,7 +398,7 @@ export default {
   font-weight: 500;
 }
 .social svg {
-  padding: 0px 5px;
+  margin: 0px 5px;
 }
 .content {
   border: 1px solid #7d7d7d;

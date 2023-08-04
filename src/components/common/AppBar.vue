@@ -9,10 +9,9 @@
         fill="#2D264B" />
     </svg>
 
-    <div>
+  
     <p class="title">Best Woods</p>
-    <router-link class="nav-link" to="/blog">Blog</router-link>
-  </div>
+  
     <div class="toolbar">
       <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
@@ -80,23 +79,14 @@ export default {
   flex: 1;
   height: 24px;
   width: 24px;
-  padding-left: 10px;
-  padding-right: 10px;
+  margin: 0px 10px;
 }
 
 .toolbar svg:hover {
   scale: 120%;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 @media only screen and (max-width: 390px) {
-  .toolbar svg {
-    height: 24px;
-    width: 24px;
-    padding-left: 5px;
-    padding-right: 5px;
-  }
 
   #app-bar {
     border-bottom: 1px solid #eaeaea;

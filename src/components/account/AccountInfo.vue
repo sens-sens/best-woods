@@ -97,10 +97,15 @@
     </div>
   </div>
 
-<img class="whatsapp" :src="whatsapp">
+
   </div>
 <div class="end-card">
+  <a href="https://wa.me/919360013915">
+    <img class="whatsapp" :src="whatsapp">
+  </a>
+
 </div>
+
 </template>
   
   <script>
@@ -163,12 +168,13 @@ export default {
 }
 
 .whatsapp{
+  
   width:48px;
   height:48px;
-  object-fit: contain;
-  float: right;
-  padding: 10px;
-  margin-top: 10px;
+  position: fixed;
+  background: transparent;
+  right: 30px;
+  bottom: 30px;
 }
 .wrapper {
   margin-left: 10px;
@@ -286,9 +292,7 @@ margin: 0px 10px;
 
 @media only screen and (max-width: 450px) {
 
-  .whatsapp{
-    display: none;
-  }
+
   .back-button {
     visibility: visible;
     padding-right: 10px;
