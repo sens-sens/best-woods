@@ -106,13 +106,13 @@
   <script>
 
 
-import image from "./../assets/photo.jpg";
-import whatsapp from "./../assets/whatsapp.png";
-import CustomButton from "./CustomButton.vue";
-import AddressSection from './sections/AddressSection.vue';
-import FavoritesSection from './sections/FavoritesSection.vue';
-import PersonalInfoSection from './sections/PersonalInfoSection.vue';
-import UploadsSection from './sections/UploadsSection.vue';
+import image from "./../../assets/photo.jpg";
+import whatsapp from "./../../assets/whatsapp.png";
+import CustomButton from "../widgets/CustomButton.vue";
+import AddressSection from '../account/sections/AddressSection.vue';
+import FavoritesSection from '../account/sections/FavoritesSection.vue';
+import PersonalInfoSection from '../account/sections/PersonalInfoSection.vue';
+import UploadsSection from '../account/sections/UploadsSection.vue';
 
 
 

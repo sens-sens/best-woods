@@ -1,29 +1,26 @@
 <template>
-  <AppBar></AppBar>
-  <AccountInfo></AccountInfo>
-  <EndCard></EndCard>
+  <AccountsPage></AccountsPage>
 </template>
 
-<script>
-import AppBar from './components/AppBar.vue'
-import AccountInfo from './components/AccountInfo.vue'
-import EndCard from './components/EndCard.vue';
 
+<script>
+import AccountsPage from "./views/AccountsPage.vue";
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    AppBar,
-    AccountInfo,
-    EndCard
-  }
-}
+    AccountsPage
+  },
+};
 </script>
+
+
 
 <style>
 @import url("https://fonts.googleapis.com/css?family=Unbounded");
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-*{
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+* {
   padding: 0;
-  margin:0
+  margin: 0;
 }
 </style>

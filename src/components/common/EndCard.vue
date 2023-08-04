@@ -253,9 +253,9 @@
 </template>
     
     <script>
-import ExpansionTile from "./widgets/ExpansionTile.vue";
+import ExpansionTile from "../widgets/ExpansionTile.vue";
 import { VueScreenSizeMixin } from "vue-screen-size";
-import EmailTextField from "./widgets/EmailTextField.vue";
+import EmailTextField from "../widgets/EmailTextField.vue";
 
 export default {
   name: "FavoritesSection",
