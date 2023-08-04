@@ -9,7 +9,10 @@
         fill="#2D264B" />
     </svg>
 
+    <div>
     <p class="title">Best Woods</p>
+    <router-link class="nav-link" to="/blog">Blog</router-link>
+  </div>
     <div class="toolbar">
       <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path

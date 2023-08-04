@@ -1,14 +1,19 @@
 <template>
-  <AccountsPage></AccountsPage>
+    <AppBar></AppBar>
+    <router-view/>
+  <EndCard></EndCard>
+  
 </template>
 
 
 <script>
-import AccountsPage from "./views/AccountsPage.vue";
+import AppBar from "./components/common/AppBar.vue";
+import EndCard from "./components/common/EndCard.vue";
 export default {
   name: "App",
   components: {
-    AccountsPage
+    AppBar,
+    EndCard,
   },
 };
 </script>
